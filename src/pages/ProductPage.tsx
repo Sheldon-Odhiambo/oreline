@@ -1,12 +1,16 @@
 import { useParams } from 'react-router-dom';
+import { useState } from 'react';
 import { motion } from 'motion/react';
-import { ShoppingBag, ZoomIn } from 'lucide-react';
+import { ShoppingBag, ZoomIn, Ruler } from 'lucide-react';
 import ProductCard from '../components/ProductCard';
 import { useCart } from '../context/CartContext';
+import SizeGuideModal from '../components/SizeGuideModal';
 
 export default function ProductPage() {
   const { id } = useParams();
   const { addToCart } = useCart();
+  const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
+  const [rating, setRating] = useState(0);
   
   const product = {
     id: id!,
@@ -38,6 +42,12 @@ export default function ProductPage() {
             <h1 className="font-serif text-5xl font-medium text-[#333333] mb-2">{product.name}</h1>
             <p className="text-2xl text-stone-600">Ksh. {product.price.toFixed(2)}</p>
           </div>
+          <button 
+            onClick={() => setIsSizeGuideOpen(true)}
+            className="flex items-center gap-2 text-[#A3ADA0] hover:text-[#8e3f3f] underline"
+          >
+            <Ruler size={16} /> Size Guide
+          </button>
           <p className="text-stone-600 leading-relaxed">{product.description}</p>
           
           <div className="space-y-4">
@@ -49,7 +59,7 @@ export default function ProductPage() {
 
           <button 
             onClick={() => addToCart({ id: product.id, name: product.name, price: product.price, image: product.images[0] })}
-            className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-[#333333] text-white hover:bg-stone-800 transition"
+            className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-[#A3ADA0] text-white hover:bg-[#8e3f3f] transition"
           >
             <ShoppingBag size={20} />
             Add to Cart - Ksh. {product.price.toFixed(2)}
@@ -78,13 +88,21 @@ export default function ProductPage() {
           <div className="mt-8">
             <h4 className="text-xl font-medium mb-4">Leave a review</h4>
             <div className="flex gap-2 mb-4">
-              {[1,2,3,4,5].map(star => <button key={star} className="text-2xl text-stone-300 hover:text-[#A8B5A2]">★</button>)}
+              {[1,2,3,4,5].map(star => (
+                <button 
+                  key={star} 
+                  onClick={() => setRating(star)}
+                  className={`text-2xl ${star <= rating ? 'text-[#A8B5A2]' : 'text-stone-300'} hover:text-[#A8B5A2]`}>
+                    ★
+                </button>
+              ))}
             </div>
             <textarea className="w-full p-4 rounded-2xl border border-stone-200" placeholder="Write your review..."></textarea>
-            <button className="mt-4 px-8 py-3 bg-[#333333] text-white rounded-full">Submit Review</button>
+            <button className="mt-4 px-8 py-3 bg-[#A3ADA0] text-white rounded-full hover:bg-[#8e3f3f] transition">Submit Review</button>
           </div>
         </div>
       </section>
+      <SizeGuideModal isOpen={isSizeGuideOpen} onClose={() => setIsSizeGuideOpen(false)} />
     </motion.div>
   );
 }

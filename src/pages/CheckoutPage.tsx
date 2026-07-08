@@ -58,8 +58,8 @@ export default function CheckoutPage() {
           <input type="text" placeholder="Shipping Address" required className="w-full px-6 py-3 rounded-full border border-stone-200" />
           
           <div className="flex gap-4">
-            <button type="button" onClick={() => setPaymentMethod('card')} className={`flex-1 py-3 rounded-full border ${paymentMethod === 'card' ? 'bg-stone-800 text-white' : 'border-stone-200'}`}>Card</button>
-            <button type="button" onClick={() => setPaymentMethod('mpesa')} className={`flex-1 py-3 rounded-full border ${paymentMethod === 'mpesa' ? 'bg-[#25D366] text-white' : 'border-stone-200'}`}>M-PESA</button>
+            <button type="button" onClick={() => setPaymentMethod('card')} className={`flex-1 py-3 rounded-full border ${paymentMethod === 'card' ? 'bg-[#A3ADA0] text-white border-[#A3ADA0]' : 'border-stone-200'}`}>Card</button>
+            <button type="button" onClick={() => setPaymentMethod('mpesa')} className={`flex-1 py-3 rounded-full border ${paymentMethod === 'mpesa' ? 'bg-[#A3ADA0] text-white border-[#A3ADA0]' : 'border-stone-200'}`}>M-PESA</button>
           </div>
 
           {paymentMethod === 'card' ? (
@@ -69,7 +69,9 @@ export default function CheckoutPage() {
             </>
           ) : (
             <div className="space-y-4">
-              <p className="text-sm text-stone-600">Please pay to Paybill: <span className="font-bold">123456</span></p>
+              <p className="text-sm text-stone-600">Please pay to:</p>
+              <p className="text-sm">Paybill: <span className="font-bold">123456</span></p>
+              <p className="text-sm">Bank Acc: <span className="font-bold">0121019000429</span></p>
               <input type="tel" placeholder="Phone Number (M-PESA)" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} required className="w-full px-6 py-3 rounded-full border border-stone-200" />
             </div>
           )}
@@ -77,7 +79,7 @@ export default function CheckoutPage() {
           <button 
             type="submit"
             disabled={isProcessing}
-            className="w-full bg-[#333333] text-white py-4 rounded-full font-medium hover:bg-stone-800 transition disabled:opacity-50"
+            className="w-full bg-[#A3ADA0] text-white py-4 rounded-full font-medium hover:bg-[#8e3f3f] transition disabled:opacity-50"
           >
             {isProcessing ? 'Processing...' : `Pay Ksh. ${subtotal.toFixed(2)}`}
           </button>

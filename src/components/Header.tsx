@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { ShoppingBag, Menu, X, Heart } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+import { ShoppingBag, Menu, X, Heart, Search } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
 
@@ -8,12 +8,21 @@ export default function Header() {
   const { toggleDrawer, cartItems } = useCart();
   const { wishlistItems } = useWishlist();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
   const itemCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchTerm.trim()) {
+      navigate(`/shop?search=${searchTerm}`);
+    }
+  };
+
   const navLinks = [
+    { to: '/about', label: 'About' },
     { to: '/shop', label: 'Shop' },
     { to: '/collections', label: 'Collections' },
-    { to: '/about', label: 'About' },
     { to: '/faq', label: 'FAQ' },
     { to: '/wishlist', label: 'Wishlist' },
   ];

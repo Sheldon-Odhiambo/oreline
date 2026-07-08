@@ -30,9 +30,11 @@ export default function Footer() {
         <div className="space-y-4">
           <h4 className="font-medium text-stone-900">Follow Us</h4>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-[#333333] transition"><Instagram size={20} /></a>
-            <a href="#" className="hover:text-[#333333] transition"><Music size={20} /></a>
-            <a href="#" className="hover:text-[#333333] transition"><Smartphone size={20} /></a>
+            <a href="https://www.instagram.com/oreline._?igsh=YTZqN2hmOGoyb2tv" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-[#E8F5E9] text-[#1B5E20] border border-[#C8E6C9] hover:bg-[#C8E6C9] transition"><Instagram size={20} /></a>
+            <a href="https://www.tiktok.com/@oreline.__?_r=1&_t=ZS-97rBOz2BP08" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-[#E8F5E9] text-[#1B5E20] border border-[#C8E6C9] hover:bg-[#C8E6C9] transition"><Music size={20} /></a>
+          </div>
+          <div className="text-sm space-y-1">
+            <p className="flex items-center gap-2"><Mail size={16} /> orelineke@gmail.com</p>
           </div>
         </div>
       </div>

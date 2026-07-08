@@ -17,7 +17,7 @@ export default function NewsletterSignup() {
             placeholder="Enter your email" 
             className="flex-grow px-4 py-3 rounded-full border border-stone-200 focus:outline-none focus:border-stone-400"
           />
-          <button className="px-6 py-3 rounded-full bg-[#A8B5A2] text-white hover:bg-[#95a391] transition">Subscribe</button>
+          <button className="px-6 py-3 rounded-full bg-[#A3ADA0] text-white hover:bg-[#8e3f3f] transition">Subscribe</button>
         </form>
       </motion.div>
     </section>

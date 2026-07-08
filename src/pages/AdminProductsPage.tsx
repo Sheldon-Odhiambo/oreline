@@ -24,8 +24,8 @@ export default function AdminProductsPage() {
   };
 
   const handleAdd = async () => {
-    if (!imageFile || Number(price) < 800 || Number(price) > 1000) {
-        alert("Price must be between 800 and 1000");
+    if (!imageFile || Number(price) < 500 || Number(price) > 1000) {
+        alert("Price must be between 500 and 1000");
         return;
     }
     setUploading(true);
@@ -44,8 +44,8 @@ export default function AdminProductsPage() {
     const newPrice = newPrices[id] ? Number(newPrices[id]) : currentData.price;
     const newName = newNames[id] || currentData.name;
     
-    if (newPrice < 800 || newPrice > 1000) {
-        alert("Price must be between 800 and 1000");
+    if (newPrice < 500 || newPrice > 1000) {
+        alert("Price must be between 500 and 1000");
         return;
     }
 

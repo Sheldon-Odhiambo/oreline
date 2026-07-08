@@ -57,7 +57,7 @@ export default function CartDrawer() {
               </div>
               <button 
                 onClick={handleCheckout}
-                className="w-full bg-[#333333] text-white py-4 rounded-full font-medium hover:bg-stone-800 transition"
+                className="w-full bg-[#A3ADA0] text-white py-4 rounded-full font-medium hover:bg-[#8e3f3f] transition"
               >
                 Checkout
               </button>

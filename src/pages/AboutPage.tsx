@@ -3,8 +3,8 @@ import AboutBrand from '../components/AboutBrand';
 
 export default function AboutPage() {
   const topics = [
-    { name: 'Our Mission', image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200', description: 'Empowering movement through comfort.' },
-    { name: 'Sustainability', image: 'https://images.unsplash.com/photo-1547910352-78a7c2688001?auto=format&fit=crop&q=80&w=1200', description: 'Ethically sourced materials.' },
+    { name: 'Our Mission', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_19.36.55_f3ysmd', description: 'Empowering movement through comfort.' },
+    { name: 'Sustainability', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_18.24.42_gejuma', description: 'Ethically sourced materials.' },
     { name: 'Craftsmanship', image: 'https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&q=80&w=1200', description: 'Designed for everyday performance.' },
   ];
 

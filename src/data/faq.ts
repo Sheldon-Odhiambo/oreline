@@ -21,7 +21,7 @@ export const faqData = [
   },
   {
     question: "Payments",
-    answer: "We accept all major credit cards, Apple Pay, and PayPal. All transactions are securely processed."
+    answer: "We accept all major credit cards, Apple Pay, and PayPal. All transactions are securely processed. We also accept payments directly to our bank account: [Please Insert Your Bank Account Number]."
   },
   {
     question: "Orders",

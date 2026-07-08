@@ -6,7 +6,7 @@ export default function AboutBrand() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div className="rounded-[2rem] overflow-hidden aspect-[4/5] bg-stone-100 shadow-inner">
           <img 
-            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200" 
+            src="https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_20.10.56_yfrpl9" 
             alt="Wellness philosophy" 
             className="w-full h-full object-cover"
           />
