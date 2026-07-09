@@ -25,6 +25,7 @@ import { WishlistProvider } from './context/WishlistContext';
 import CartDrawer from './components/CartDrawer';
 import BackToTop from './components/BackToTop';
 import WhatsAppButton from './components/WhatsAppButton';
+import ScrollToTop from './components/ScrollToTop';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -61,6 +62,7 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <CartProvider>
         <WishlistProvider>
           <div className="min-h-screen bg-[#F8F6F2]">

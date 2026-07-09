@@ -6,9 +6,23 @@ export default function CheckoutPage() {
   const { cartItems } = useCart();
   const [isProcessing, setIsProcessing] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [paymentMethod, setPaymentMethod] = useState<'card' | 'mpesa'>('card');
+  const [paymentMethod, setPaymentMethod] = useState<'mpesa'>('mpesa');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [address, setAddress] = useState('');
   const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+
+  const orderDetails = `New Order:
+Name: ${name}
+Email: ${email}
+Address: ${address}
+Phone: ${phoneNumber}
+Items:
+${cartItems.map(item => `${item.name} (${item.quantity} x Ksh. ${item.price})`).join('\n')}
+Total: Ksh. ${subtotal.toFixed(2)}`;
+
+  const whatsappUrl = `https://wa.me/254113516808?text=${encodeURIComponent(orderDetails)}`;
 
   const handlePay = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -41,7 +55,8 @@ export default function CheckoutPage() {
     return (
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="pt-32 pb-20 px-6 max-w-lg mx-auto text-center">
         <h1 className="font-serif text-5xl font-medium text-[#333333] mb-6">Thank you for your order</h1>
-        <p className="text-stone-600 mb-8">Your ORÉLINE pieces are being prepared with care.</p>
+        <p className="text-stone-600 mb-8">Your ORÉLINE pieces are being prepared with care. Please share your order details via WhatsApp to complete payment confirmation.</p>
+        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-full bg-[#A3ADA0] text-white mr-4">Share on WhatsApp</a>
         <a href="/" className="px-8 py-3 rounded-full bg-[#333333] text-white">Back to Home</a>
       </motion.div>
     );
@@ -53,28 +68,17 @@ export default function CheckoutPage() {
       
       <div className="grid md:grid-cols-2 gap-16">
         <form className="space-y-6" onSubmit={handlePay}>
-          <input type="text" placeholder="Full Name" required className="w-full px-6 py-3 rounded-full border border-stone-200" />
-          <input type="email" placeholder="Email" required className="w-full px-6 py-3 rounded-full border border-stone-200" />
-          <input type="text" placeholder="Shipping Address" required className="w-full px-6 py-3 rounded-full border border-stone-200" />
+          <input type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)} required className="w-full px-6 py-3 rounded-full border border-stone-200" />
+          <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required className="w-full px-6 py-3 rounded-full border border-stone-200" />
+          <input type="text" placeholder="Shipping Address" value={address} onChange={(e) => setAddress(e.target.value)} required className="w-full px-6 py-3 rounded-full border border-stone-200" />
           
-          <div className="flex gap-4">
-            <button type="button" onClick={() => setPaymentMethod('card')} className={`flex-1 py-3 rounded-full border ${paymentMethod === 'card' ? 'bg-[#A3ADA0] text-white border-[#A3ADA0]' : 'border-stone-200'}`}>Card</button>
-            <button type="button" onClick={() => setPaymentMethod('mpesa')} className={`flex-1 py-3 rounded-full border ${paymentMethod === 'mpesa' ? 'bg-[#A3ADA0] text-white border-[#A3ADA0]' : 'border-stone-200'}`}>M-PESA</button>
+          <div className="space-y-4">
+            <p className="text-sm text-stone-600">Please pay via Paybill and share the payment message via the WhatsApp icon:</p>
+            <p className="text-sm">Paybill: <span className="font-bold">972700</span></p>
+            <p className="text-sm">Account: <span className="font-bold">8254</span></p>
+            <input type="tel" placeholder="Phone Number (M-PESA)" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} required className="w-full px-6 py-3 rounded-full border border-stone-200" />
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="block text-center w-full bg-green-600 text-white py-3 rounded-full font-medium hover:bg-green-700 transition">Share Payment via WhatsApp</a>
           </div>
-
-          {paymentMethod === 'card' ? (
-            <>
-              <input type="text" placeholder="Card Number (0000 0000 0000 0000)" required className="w-full px-6 py-3 rounded-full border border-stone-200" />
-              <input type="text" placeholder="CVC" required className="w-full px-6 py-3 rounded-full border border-stone-200" />
-            </>
-          ) : (
-            <div className="space-y-4">
-              <p className="text-sm text-stone-600">Please pay to:</p>
-              <p className="text-sm">Paybill: <span className="font-bold">123456</span></p>
-              <p className="text-sm">Bank Acc: <span className="font-bold">0121019000429</span></p>
-              <input type="tel" placeholder="Phone Number (M-PESA)" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} required className="w-full px-6 py-3 rounded-full border border-stone-200" />
-            </div>
-          )}
           
           <button 
             type="submit"
