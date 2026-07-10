@@ -16,8 +16,8 @@ export default function ContactPage() {
         </form>
         
         <div className="space-y-8 text-stone-600">
-          <p className="flex items-center gap-4"><Mail /> hello@oreline.com</p>
-          <p className="flex items-center gap-4"><Phone /> +1 (555) 123-4567</p>
+          <p className="flex items-center gap-4"><Mail /> orelineke@gmail.com</p>
+          <p className="flex items-center gap-4"><Phone />+254 113 516 808</p>
           <p className="flex items-center gap-4"><MapPin /> Wellness District, CA</p>
           
           <button className="flex items-center gap-3 bg-[#25D366] text-white px-6 py-3 rounded-full hover:bg-[#128C7E] transition">
