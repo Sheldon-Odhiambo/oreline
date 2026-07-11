@@ -1,9 +1,9 @@
 import { motion } from 'motion/react';
 
 const testimonials = [
-  { text: "ORÉLINE has completely transformed my daily movement. The comfort and elegance are unmatched.", author: "Sarah J." },
-  { text: "Finally, activewear that feels like luxury. Beautiful, functional, and so calming.", author: "Elena M." },
-  { text: "I've never felt more confident in my yoga practice than when wearing these pieces.", author: "Maya K." },
+  { text: "ORÉLINE has completely transformed my daily movement. The comfort and elegance are unmatched.", author: "Kemi M." },
+  { text: "Finally, activewear that feels like luxury. Beautiful, functional, and so calming.", author: "Apondi T." },
+  { text: "I've never felt more confident in my yoga practice than when wearing these pieces.", author: "Wanjiru S." },
 ];
 
 export default function Testimonials() {

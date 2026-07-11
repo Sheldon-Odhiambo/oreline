@@ -65,7 +65,7 @@ export default function HomePage() {
       <section className="py-24 px-6 max-w-7xl mx-auto bg-stone-50 rounded-[3rem]">
         <h2 className="font-serif text-5xl font-medium text-[#333333] mb-16 text-center">Featured Essentials</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <ProductCard id="7" image="https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_18.23.47_f9cu6l" name="Yoga Set (Bra + Leggings)" price={3500} />
+          <ProductCard id="7" image="/assets/yoga3.jpeg" name="Yoga 3 piece set" price={4500} />
           <ProductCard id="8" image="https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_18.24.16_o0obwd" name="Pilates Set" price={3600} />
           <ProductCard id="9" image="https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_18.24.42_pmrhpg" name="High Leggings" price={2500} />
         </div>
