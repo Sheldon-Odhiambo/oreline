@@ -50,17 +50,15 @@ export default function Footer() {
               <Link to="/about">About</Link>
             </li>
 
-            <li>
-              <Link to="/tracking">Order Tracking</Link>
-            </li>
+            
 
             <li>
               <Link to="/contact">Contact Us</Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link to="/admin/login">Admin</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 

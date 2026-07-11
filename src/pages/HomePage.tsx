@@ -45,8 +45,8 @@ export default function HomePage() {
           className="grid grid-cols-2 gap-4"
         >
           <img src="https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_19.36.55_corebn" className="rounded-2xl h-64 object-cover" alt="Activewear 1" />
-          <img src="https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_18.23.47_xdmfva" className="rounded-2xl h-64 object-cover" alt="Activewear 2" />
-          <img src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&fit=crop&q=80&w=800" className="rounded-2xl h-64 object-cover" alt="Activewear 3" />
+          <img src="/assets/suit.jpeg" className="rounded-2xl h-64 object-cover" alt="Activewear 2" />
+          <img src="/assets/pants.png" className="rounded-2xl h-64 object-cover" alt="Activewear 3" />
           <img src="https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_19.40.13_feas80" className="rounded-2xl h-64 object-cover" alt="Activewear 4" />
         </motion.div>
       </section>

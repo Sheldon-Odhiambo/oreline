@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 export default function CollectionsPage() {
   const navigate = useNavigate();
   const collections = [
-    { name: 'Flow Collection', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_18.23.47_qtqnar' },
+    { name: 'Flow Collection', image: '/assets/suit.jpeg' },
     { name: 'Move Collection', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_18.25.09_zv9fy7' },
     { name: 'Rest Collection', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_20.10.56_yxofrr' },
   ];
