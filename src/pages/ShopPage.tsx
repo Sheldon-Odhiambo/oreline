@@ -27,6 +27,8 @@ const products = [
   { id: '22', name: 'Oversized Tshirt', price: 2000, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/rest1prod1.jpeg' },
   { id: '23', name: 'Comfy Socks', price: 200, category: 'Accessories', collection: 'Reset', size: 'N/A', color: 'Various', material: 'Cotton', image: '/assets/restprod1b.jpeg' },
   { id: '24', name: 'Oversized Hoodie', price: 2500, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_20.10.56_yfrpl9' },
+    { id: '24', name: 'Head Bands', price: 400, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: '/asssets/move4.jpeg' },
+
 ];
 
 export default function ShopPage() {
