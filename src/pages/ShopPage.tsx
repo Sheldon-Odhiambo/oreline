@@ -17,17 +17,18 @@ const products = [
   { id: '13', name: 'Grip Socks', price: 300, category: 'Accessories', collection: 'Flow', size: 'N/A', color: 'Various', material: 'Cotton', image: '/assets/flow1prod7.jpeg' },
   // Move Collection
   { id: '7', name: 'Yoga 3 piece set', price: 4000, category: 'Sets', collection: 'Move', size: 'M', color: 'Various', material: 'Polyester', image: '/assets/yoga3.jpeg' },
-  { id: '14', name: 'Yoga Long sleeved two piece set', price: 3500, category: 'Move', collection: 'Flow', size: 'M', color: 'Various', material: 'Polyester', image: '/assets/suit.jpeg' },
+  { id: '14', name: 'Yoga Long sleeved two piece set', price: 3500, category: 'Move', collection: 'Move', size: 'M', color: 'Various', material: 'Polyester', image: '/assets/suit.jpeg' },
   { id: '16', name: 'Golf Set', price: 4000, category: 'Sets', collection: 'Move', size: 'M', color: 'Various', material: 'Polyester', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_19.36.55_hse074' },
   { id: '17', name: 'Golf Skirt', price: 2000, category: 'Sets', collection: 'Move', size: 'M', color: 'Various', material: 'Polyester', image: '/assets/move1prod1b.jpeg' },
   { id: '18', name: 'Cap', price: 1500, category: 'Accessories', collection: 'Move', size: 'N/A', color: 'Various', material: 'Cotton', image: '/assets/capp1.png' },
   { id: '19', name: 'Gym Bag', price: 2500, category: 'Accessories', collection: 'Move', size: 'N/A', color: 'Various', material: 'Canvas', image: '/assets/bag1.png' },
-  { id: '20', name: 'Sweat Set', price: 6500, category: 'Sets', collection: 'Move', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/sweat-suit.png' },
-  { id: '21', name: 'Sweat Pants', price: 3500, category: 'Leggings', collection: 'Move', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/pants.png' },
+  { id: '20', name: 'Sweat Set', price: 5000, category: 'Sets', collection: 'Move', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/sweat-suit.png' },
+  { id: '21', name: 'Sweat Pants', price: 3000, category: 'Leggings', collection: 'Move', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/pants.png' },
+  { id: '21', name: 'Hoodie', price: 2500, category: 'Leggings', collection: 'Move', size: 'all', color: 'Various', material: 'Cotton', image: '/assets/rest1prod1c.jpeg' },
+
   // Reset Collection
   { id: '22', name: 'Oversized Tshirt', price: 2000, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/rest1prod1.jpeg' },
   { id: '23', name: 'Comfy Socks', price: 200, category: 'Accessories', collection: 'Reset', size: 'N/A', color: 'Various', material: 'Cotton', image: '/assets/restprod1b.jpeg' },
-  // { id: '24', name: 'Oversized Hoodie', price: 2500, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_20.10.56_yfrpl9' },
     { id: '24', name: 'Head Bands', price: 400, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/move4.jpeg' },
 
 ];
