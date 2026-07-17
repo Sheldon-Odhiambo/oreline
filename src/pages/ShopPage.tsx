@@ -7,8 +7,7 @@ import CompareModal from '../components/CompareModal';
 import { useCart } from '../context/CartContext';
 
 const products = [
-  { id: '7', name: 'Yoga 3 piece set', price: 4500, category: 'Sets', collection: 'Flow', size: 'M', color: 'Various', material: 'Polyester', image: '/assets/suit.jpeg' },
-  { id: '14', name: 'Yoga Long sleeved two piece set', price: 3500, category: 'Sets', collection: 'Flow', size: 'M', color: 'Various', material: 'Polyester', image: '/assets/yoga3.jpeg' },
+  
   { id: '15', name: 'Pilates long sleeved two piece set', price: 3000, category: 'Sets', collection: 'Flow', size: 'M', color: 'Various', material: 'Polyester', image: '/assets/flow1prod2b.jpeg' },
   { id: '8', name: 'Pilates two piece set', price: 2500, category: 'Sets', collection: 'Flow', size: 'M', color: 'Various', material: 'Polyester', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_18.24.16_p2ntj8' },
   { id: '9', name: 'High Leggings', price: 2500, category: 'Leggings', collection: 'Flow', size: 'M', color: 'Various', material: 'Spandex', image: '/assets/flow1prod3.jpeg' },
@@ -17,6 +16,8 @@ const products = [
   { id: '12', name: 'Yoga Strap', price: 1500, category: 'Accessories', collection: 'Flow', size: 'N/A', color: 'Various', material: 'Cotton', image: '/assets/flow1prod6.jpeg' },
   { id: '13', name: 'Grip Socks', price: 300, category: 'Accessories', collection: 'Flow', size: 'N/A', color: 'Various', material: 'Cotton', image: '/assets/flow1prod7.jpeg' },
   // Move Collection
+  { id: '7', name: 'Yoga 3 piece set', price: 4000, category: 'Sets', collection: 'Move', size: 'M', color: 'Various', material: 'Polyester', image: '/assets/yoga3.jpeg' },
+  { id: '14', name: 'Yoga Long sleeved two piece set', price: 3500, category: 'Move', collection: 'Flow', size: 'M', color: 'Various', material: 'Polyester', image: '/assets/suit.jpeg' },
   { id: '16', name: 'Golf Set', price: 4000, category: 'Sets', collection: 'Move', size: 'M', color: 'Various', material: 'Polyester', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_19.36.55_hse074' },
   { id: '17', name: 'Golf Skirt', price: 2000, category: 'Sets', collection: 'Move', size: 'M', color: 'Various', material: 'Polyester', image: '/assets/move1prod1b.jpeg' },
   { id: '18', name: 'Cap', price: 1500, category: 'Accessories', collection: 'Move', size: 'N/A', color: 'Various', material: 'Cotton', image: '/assets/capp1.png' },
@@ -26,8 +27,8 @@ const products = [
   // Reset Collection
   { id: '22', name: 'Oversized Tshirt', price: 2000, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/rest1prod1.jpeg' },
   { id: '23', name: 'Comfy Socks', price: 200, category: 'Accessories', collection: 'Reset', size: 'N/A', color: 'Various', material: 'Cotton', image: '/assets/restprod1b.jpeg' },
-  { id: '24', name: 'Oversized Hoodie', price: 2500, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_20.10.56_yfrpl9' },
-    { id: '24', name: 'Head Bands', price: 400, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: '/asssets/move4.jpeg' },
+  // { id: '24', name: 'Oversized Hoodie', price: 2500, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: 'https://res.cloudinary.com/di15s67o/image/upload/f_auto,q_auto/WhatsApp_Image_2026-07-08_at_20.10.56_yfrpl9' },
+    { id: '24', name: 'Head Bands', price: 400, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/move4.jpeg' },
 
 ];
 

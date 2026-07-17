@@ -22,7 +22,7 @@ Items:
 ${cartItems.map(item => `${item.name} (${item.quantity} x Ksh. ${item.price})`).join('\n')}
 Total: Ksh. ${subtotal.toFixed(2)}`;
 
-  const whatsappUrl = `https://wa.me/254113516808?text=${encodeURIComponent(orderDetails)}`;
+  const whatsappUrl = `https://wa.me/254712345678?text=${encodeURIComponent(orderDetails)}`;
 
   const handlePay = async (e: React.FormEvent) => {
     e.preventDefault();
