@@ -72,14 +72,40 @@ Total: Ksh. ${subtotal.toFixed(2)}`;
           <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required className="w-full px-6 py-3 rounded-full border border-stone-200" />
           <input type="text" placeholder="Shipping Address" value={address} onChange={(e) => setAddress(e.target.value)} required className="w-full px-6 py-3 rounded-full border border-stone-200" />
           
-          <div className="space-y-4">
-            <p className="text-sm text-stone-600">Please pay via Paybill and share the payment message via the WhatsApp icon:</p>
-            <p className="text-sm">Paybill: <span className="font-bold">972700</span></p>
-            <p className="text-sm">Account: <span className="font-bold">8254</span></p>
-            <input type="tel" placeholder="Phone Number (M-PESA)" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} required className="w-full px-6 py-3 rounded-full border border-stone-200" />
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="block text-center w-full bg-green-600 text-white py-3 rounded-full font-medium hover:bg-green-700 transition">Share Payment via WhatsApp</a>
-          </div>
-          
+          <div className="bg-white rounded-xl p-6 shadow-lg">
+                      <h3 className="text-2xl font-bold mb-4">Complete Your Payment</h3>
+
+                      <p className="text-gray-600 mb-4">
+                        To complete your order, kindly make your payment via M-Pesa using the
+                        details below.
+                      </p>
+
+                      <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <h4 className="font-semibold text-lg mb-2">
+                          Pay via M-Pesa
+                        </h4>
+
+                        <div className="space-y-2">
+                          <p className="text-gray-700">
+                            <span className="font-semibold">Name:</span> Euphemia Osiro
+                          </p>
+
+                          <p className="text-gray-700">
+                            <span className="font-semibold">M-Pesa Number:</span>
+                          </p>
+
+                          <p className="text-2xl font-bold text-green-700">
+                            0741 919 188
+                          </p>
+                        </div>
+
+                        <p className="text-sm text-gray-600 mt-4">
+                          We are currently working on integrating M-Pesa STK Push to make
+                          payments faster and more convenient.
+                        </p>
+                      </div>
+                    </div>
+                              
           <button 
             type="submit"
             disabled={isProcessing}
