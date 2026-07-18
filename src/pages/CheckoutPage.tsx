@@ -105,14 +105,13 @@ Total: Ksh. ${subtotal.toFixed(2)}`;
                         </p>
                       </div>
                     </div>
-                              
-          <button 
-            type="submit"
-            disabled={isProcessing}
-            className="w-full bg-[#A3ADA0] text-white py-4 rounded-full font-medium hover:bg-[#8e3f3f] transition disabled:opacity-50"
-          >
-            {isProcessing ? 'Processing...' : `Pay Ksh. ${subtotal.toFixed(2)}`}
-          </button>
+                                                  
+                          <button
+                      type="submit"
+                      className="w-full bg-[#A3ADA0] text-white py-4 rounded-full font-medium hover:bg-[#8e3f3f] transition"
+                    >
+                      Share Details via WhatsApp
+                    </button>
         </form>
 
         <div className="bg-stone-50 p-8 rounded-3xl h-fit">
