@@ -112,18 +112,26 @@ M-Pesa Number: 0741 919 188`;
                         </h4>
 
                         <div className="space-y-2">
-                          <p className="text-gray-700">
-                            <span className="font-semibold">Name:</span> Euphemia Osiro
-                          </p>
+  <p className="text-gray-700">
+    <span className="font-semibold">Bank Name:</span> KCB BANK 
+  </p>
 
-                          <p className="text-gray-700">
-                            <span className="font-semibold">M-Pesa Number:</span>
-                          </p>
+  <p className="text-gray-700">
+    <span className="font-semibold">Paybill Number:</span>
+  </p>
 
-                          <p className="text-2xl font-bold text-green-700">
-                            0741 919 188
-                          </p>
-                        </div>
+  <p className="text-2xl font-bold text-green-700">
+    522522
+  </p>
+
+  <p className="text-gray-700 mt-4">
+    <span className="font-semibold">Account Number:</span>
+  </p>
+
+  <p className="text-xl font-bold text-green-700">
+    1337197408
+  </p>
+</div>
 
                         <p className="text-sm text-gray-600 mt-4">
                           We are currently working on integrating M-Pesa STK Push to make

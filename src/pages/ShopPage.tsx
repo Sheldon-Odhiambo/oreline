@@ -24,7 +24,7 @@ const products = [
   { id: '19', name: 'Gym Bag', price: 2500, category: 'Accessories', collection: 'Move', size: 'N/A', color: 'Various', material: 'Canvas', image: '/assets/bag1.png' },
   { id: '20', name: 'Sweat Set', price: 5000, category: 'Sets', collection: 'Move', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/sweat-suit.png' },
   { id: '21', name: 'Sweat Pants', price: 3000, category: 'Leggings', collection: 'Move', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/pants.png' },
-  { id: '21', name: 'Hoodie', price: 2500, category: 'Leggings', collection: 'Move', size: 'all', color: 'Various', material: 'Cotton', image: '/assets/rest1prod1c.jpeg' },
+  { id: '21', name: 'Hoodie', price: 2500, category: 'Leggings', collection: 'Move', size: 'all', color: 'Various', material: 'Cotton', image: '/assets/hoodie.jpeg' },
 
   // Reset Collection
   { id: '22', name: 'Oversized Tshirt', price: 2000, category: 'Tops', collection: 'Reset', size: 'M', color: 'Various', material: 'Cotton', image: '/assets/rest1prod1.jpeg' },
